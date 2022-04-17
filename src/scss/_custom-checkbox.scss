@@ -27,10 +27,9 @@
 .checkbox {
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 8px;
     height: 80px;
     width: 80px;
-    transition: all 0.2s ease;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -53,10 +52,4 @@
     height: 8px;
     border-radius: 50%;
     background: #e30613;
-}
-
-.radio-container:hover .checkbox,
-.radio-container:active .checkbox,
-.radio-container:focus .checkbox {
-    transform: scale3d(1.2, 1.2, 1);
 }

@@ -7,6 +7,8 @@ export default function Login(){
 	const [error, setError] = useState({ code: '', message: '' });
 
 	const onError = response => {
+		console.log(response);
+		
 		setError({
 			code: response.code,
 			message: response.message,
@@ -14,6 +16,8 @@ export default function Login(){
 	};
 
 	const onRegister = register => {
+		console.log(register);
+		
 		if (error.code === '') {
 			console.log("registered !")
 		} else{
@@ -32,21 +36,22 @@ export default function Login(){
 		<div className='login-container'>
 			<img className='logo' src='/assets/images/logo.svg' />
 			<form className='login' onSubmit={onSubmit}>
-				<div>
+				<div className='input'>
 					<label htmlFor='username'>Enter your name</label>
 					<input
 						id='username'
 						name='username'
-						className='mb-5 username-input'
+						className='username-input'
 						value={queryUsername}
 						onChange={e => setQueryUsername(e.target.value)}
 						type='text'></input>
 					<span>{error.message}</span>
 				</div>
 
-				<p className='pick'>Pick your bird</p>
+				<div className='mb-5'></div>
 
-				<div>
+				<div className='radio'>
+					<p className='pick'>Pick your bird</p>
 					<label className='radio-container'>
 						<input
 							id='avatar'

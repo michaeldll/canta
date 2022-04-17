@@ -1,0 +1,62 @@
+//https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+
+/* The container */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 80px;
+    height: 80px;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 80px;
+    width: 80px;
+    transition: all 0.2s ease;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkbox:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkbox:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkbox:after {
+    top: 120%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #e30613;
+}
+
+.radio-container:hover .checkbox,
+.radio-container:active .checkbox,
+.radio-container:focus .checkbox {
+    transform: scale3d(1.2, 1.2, 1);
+}

@@ -2,7 +2,7 @@
 
 As barebones as I can go. You probably don't want to use this, but feel free to.
 
-Featuring: only 2 dependencies, fast build times and typescript support with esbuild, sass support with `esbuild-sass-plugin `.
+Featuring: only 2 dependencies, fast build times and typescript support with `esbuild`, sass support with `esbuild-sass-plugin `.
 
 ## How to develop :
 

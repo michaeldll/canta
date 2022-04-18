@@ -4,18 +4,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url('/assets/images/bg-login.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: linear-gradient(180deg, rgb(84, 78, 89) 0%, rgb(122, 118, 126) 100%);
+    border-radius: 30px;
     color: white;
-    background-position: center;
-    height: 550px;
-    width: 211px;
-    padding: 30px 70px;
+    padding: 60px 40px;
 
     .logo {
         width: 100px;
-        height: 25%;
         margin-bottom: 2.5rem;
     }
 

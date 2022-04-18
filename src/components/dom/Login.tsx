@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { register, listenForRegister, listenForErrors } from '../../utils/client';
 
 export default function Login({ setUsername }) {
 	const [queryUsername, setQueryUsername] = useState('');
